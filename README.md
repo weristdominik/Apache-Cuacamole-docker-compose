@@ -9,13 +9,13 @@ https://guacamole.apache.org/doc/gug/guacamole-docker.html
 1. Download .ZIP and extract
 2. run docker-compose
 3. run ./initdb.sql on mysql docker
-     -> docker exec -it mysql bin/bash/
-     -> mysql -u root
-     -> GRANT ALL PRIVILEGES ON guacamole.* TO 'guacamole_user'@'%';
-        FLUSH PRIVILEGES;
-     -> exit
+     3.1 docker exec -it mysql bin/bash/
+     3.2 mysql -u root
+     3.3 GRANT ALL PRIVILEGES ON guacamole.* TO 'guacamole_user'@'%';
+     3.4 FLUSH PRIVILEGES;
+     3.5 exit
 
-     -> mysql -u guacamole_user -p < initdb.sql
+     3.6 mysql -u guacamole_user -p < initdb.sql
      (initdb.sql ist in / directory of docker mysql)
 
 
