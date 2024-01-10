@@ -1,4 +1,4 @@
-# Apache-Cuacamole-docker-compose
+a# Apache-Cuacamole-docker-compose
 Run Apache Cuacamole (MYSQL Backend) in docker-compose
 
 
@@ -8,7 +8,8 @@ https://guacamole.apache.org/doc/gug/guacamole-docker.html
 
 1. Download .ZIP and extract
 2. run docker-compose
-3. copy File initdb.sql to Your mysql docker container 
+3. copy File initdb.sql to Your mysql docker container
+
      3.1 docker exec -it mysql bin/bash/
    
      3.2 mysql -u root
