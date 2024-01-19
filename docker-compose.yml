@@ -1,7 +1,8 @@
 version: '3'
-
 services:
   guacamole:
+    depends_on:
+      - mysql
     image: guacamole/guacamole:latest
     container_name: guacamole
     restart: always
@@ -28,4 +29,5 @@ services:
       - MYSQL_USER=guacamole_user
       - MYSQL_PASSWORD=your_mysql_password
       - MYSQL_ROOT_PASSWORD=your_mysql_root_password
-
+    volumes:
+      - ./guacamole_data/mysql:/var/lib/mysql
